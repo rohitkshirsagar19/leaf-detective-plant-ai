@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 export const checkApiHealth = async () => {
   try {
     const response = await axios.get(`${API_URL}/health`);
-    if (response.data.status !== 'API is running') {
+    if (response.data.status !== '✅ Plant Disease Detection API is running. Use the /predict endpoint to make a prediction.') {
       throw new Error('API is not running');
     }
     return response.data;
