@@ -4,6 +4,9 @@ A React web app for diagnosing tomato and potato leaf diseases via image uploads
 
 ![Plant Disease Detector UI](public/dashboard.png)
 
+
+![Prediction Results](public/prediction.png)
+
 ## Project Overview
 
 This application enables users to upload images of tomato or potato leaves to identify diseases, view confidence scores, and receive treatment suggestions. Built with React and Vite, it connects to a Flask backend on Render, using a TensorFlow Lite model trained on the PlantVillage dataset (~90.5% accuracy).
